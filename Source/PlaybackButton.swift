@@ -50,7 +50,7 @@ import UIKit
     open var adjustMarginValue: CGFloat = 0
     open var contentEdgeInsets = UIEdgeInsets.zero
     open var buttonState = PlaybackButtonState.pausing
-    open var playbackValue: CGFloat = 1.0 {
+    @objc open var playbackValue: CGFloat = 1.0 {
         didSet {
             setNeedsDisplay()
         }
