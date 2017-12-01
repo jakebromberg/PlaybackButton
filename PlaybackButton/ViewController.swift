@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     
-    func didTapPlaybackButton1(_ sender: AnyObject) {
+    @objc func didTapPlaybackButton1(_ sender: AnyObject) {
         if self.playbackButton1.buttonState == .playing {
             self.playbackButton1.setButtonState(.pausing, animated: true)
         } else if self.playbackButton1.buttonState == .pausing {
